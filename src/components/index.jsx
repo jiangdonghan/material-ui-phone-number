@@ -234,7 +234,17 @@ class MaterialUiPhoneNumber extends React.Component {
     // for all strings with length less than 3, just return it (1, 2 etc.)
     // also return the same text if the selected country has no fixed format
     if ((text && text.length < 2) || !pattern || !autoFormat) {
-      return disableCountryCode ? text : `+${text}`;
+      let code
+      if(!this.state){
+        return disableCountryCode ? text : `+${text}`;
+      }
+      if(this.state.selectedCountry){
+        code = this.state.selectedCountry.dialCode
+      }else{
+        code = this.state.defaultCountry.dialCode
+      }
+      const res = String(text).replace(String(code),`${code} `)
+      return disableCountryCode ? text : `+${res}`;
     }
 
     const formattedObject = reduce(pattern, (acc, character) => {
