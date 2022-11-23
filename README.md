@@ -1,5 +1,5 @@
 # material-ui-phone-number
-Highly customizable phone input component with auto formatting. Based on the wonderful [react-phone-input-2](https://github.com/bl00mber/react-phone-input-2) package.
+Highly customizable phone input component with auto formatting. Based on [material-ui-phone-number](https://github.com/alexplumb/material-ui-phone-number) which is not maintained anymore
 
 It looks like this, but in Material Design:
 
@@ -10,7 +10,7 @@ Uses @material-ui/core/TextField for rendering the phone input
 ## Installation
 
 ```shell-script
-npm install material-ui-phone-number --save
+npm install  mui-phone-number-react --save
 ```
 
 ## Usage
@@ -218,6 +218,7 @@ Country data object not returns from onKeyDown event
 </table>
 
 ## License
+Based on [material-ui-phone-number](https://github.com/alexplumb/material-ui-phone-number)
 
 Based on [react-phone-input-2](https://github.com/bl00mber/react-phone-input-2)
 

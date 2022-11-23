@@ -1,7 +1,7 @@
 {
-  "name": "@jiangdonghan/material-ui-phone-number",
+  "name": "mui-phone-number-react",
   "version": "1.0.0",
-  "description": "A material-ui react component to format phone numbers. Based on material-ui-phone-number",
+  "description": "A material-ui react component to format phone numbers. Based on material-ui-phone-number which is not maintained anymore",
   "main": "dist/index.js",
   "types": "index.d.ts",
   "scripts": {
