@@ -116,6 +116,17 @@ export default render(
         disableDropdown
         placeholder="(702) 123-4567"
       />
+
+      <p>Disabled editing country code</p>
+      <MaterialUiPhoneNumber
+        preferredCountries={['au', 'nz']}
+        defaultCountry="au"
+        countryCodeEditable={false}
+        variant='outlined'
+        label='Contact number'
+        autoFormat={false}
+      />
+
     </div>
   </div>,
   document.getElementById('root'),
